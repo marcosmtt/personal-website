@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+
+}
+
+body {
+    background-color: #222e49;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+nav > a {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 1em 0;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.line {
+    width: 120px;
+    height: 3px;
+}
