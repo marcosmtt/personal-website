@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Abel');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Calibri', sans-serif;
 
 }
 
@@ -12,11 +11,17 @@ body {
     background-color: #222e49;
 }
 
+header {
+    background-color: #090c14;
+    height: 65px;
+    padding: 4px;
+}
+
 nav {
     position: absolute;
-    top: 50%;
+    top: 5px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%);
 }
 
 nav > a {
@@ -24,12 +29,28 @@ nav > a {
     text-align: center;
     text-decoration: none;
     width: 120px;
-    padding: 1em 0;
+    padding: 15px 0;
     display: inline-block;
     font-size: 22px;
+    transition: all .2s ease-in-out;
 }
 
 .line {
     width: 120px;
     height: 3px;
+    background-color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+nav > a:nth-child(2):hover ~ .line{
+   transform: translate(125px);
+   transition: all .2s ease-in-out;
+}
+nav > a:nth-child(3):hover ~ .line{
+    transform: translate(250px);
+    transition: all .2s ease-in-out;
+}
+ nav > a:nth-child(4):hover ~ .line{
+    transform: translate(375px);
+    transition: all .2s ease-in-out; 
 }
