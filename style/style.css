@@ -7,11 +7,14 @@
 
 }
 
+
 body {
     width: 100%;
     height: 100vh;
-    position: fixed;
-    background-color:rgb(34, 46, 73);
+    background-image: url("../images/bgImg.jpg");
+    background-repeat: no-repeat;
+    position: fixed; 
+     /* background-color:rgb(34, 46, 73); */
 }
 
 #particles-js {
@@ -19,9 +22,14 @@ body {
     position: absolute;
 }
 
+.container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
 
 header {
-    background-color: #090c14;
+    background-color: #020610;
     height: 100%;
     padding: 2%;
 }
@@ -147,7 +155,7 @@ color: white;
     width: 5%;
     right: 2%;
     bottom: 2%;
-    transition: all ease-in-out 150ms;
+    transition: all ease-in-out 100ms;
 }
 
 #angleIcon path{
