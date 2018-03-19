@@ -22,8 +22,8 @@ body {
 
 header {
     background-color: #090c14;
-    height: 63px;
-    padding: 4px;
+    height: 100%;
+    padding: 2%;
 }
 
 nav {
@@ -38,83 +38,92 @@ nav > a {
     text-align: center;
     text-decoration: none;
     font-weight: 100;
-    width: 120px;
-    padding: 15px 0;
+    width: 4.5em;
+    padding: 3% 0;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: all .2s ease-in-out;
 }
 
 .line {
-    width: 120px;
+    width: 24%;
     height: 3px;
     background-color: #DDD;
     transition: all .2s ease-in-out;
 }
 
 nav > a:nth-child(2):hover ~ .line{
-   transform: translate(125px);
+   transform: translate(105%);
    transition: all .2s ease-in-out;
 
 }
 nav > a:nth-child(3):hover ~ .line{
-    transform: translate(250px);
+    transform: translate(210%);
     transition: all .2s ease-in-out;
 }
  nav > a:nth-child(4):hover ~ .line{
-    transform: translate(375px);
+    transform: translate(320%);
     transition: all .2s ease-in-out; 
 }
 
 .box {
     position: relative;
-    width: 430px;
-    height: 620px;
+    width: 26%;
+    height: 80%;
     background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
+    padding: 1%;
     text-align: center;
     margin: auto;
-    margin-top: 7%;
+    margin-top: 7.5%;
 }
 
 .profilePhoto {
-    width: 150px;
+    width: 35%;
+    margin-top: 5%;
 }
 
 .box h1 {
-font-size: 55px;
+font-size: 3.4vw;
 font-weight: 50;
 letter-spacing: 1px;
 color: white;
 }
 
 .box h3 {
+    width: 86%;
+    margin: auto;
     color: #ddd;
-    font-weight: 100;
+    font-size: 1.2vw; 
+    font-weight: 10;
+    text-align: center;
 }
 
 .box p {
-    margin-top: 20px;
+    width: 81%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1vw;
     color: #aaa;
     text-align: justify;
 }
 
-.box ul  {
-   margin: 0;
-   padding: 0;
-   margin-top: 10px;
+.box ul {
+    margin: 0;
+    padding: 0;
+    top: 80%;
 }
 
 .box li {
+    top: 50%;
     display: inline-block;
-    margin: 6px;
+    margin: 2%; 
     list-style: none;
 }
 
 .box li a {
     color: white;
-    text-decoration: none;
-    font-size: 40px;
+    text-decoration: none;;
+    font-size: 3vw;
     transition: all ease-in-out 150ms;
 }
 
