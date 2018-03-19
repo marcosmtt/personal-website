@@ -101,14 +101,14 @@ color: white;
 .box p {
     width: 81%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 6%;
     font-size: 1vw;
     color: #aaa;
     text-align: justify;
 }
 
 .box ul {
-    margin: 8%;
+    margin: 5%;
     padding: 0;
 }
 
@@ -140,4 +140,21 @@ color: white;
 
 #da:hover {
     color: #00ff80;
+}
+
+#angleIcon {
+    position: fixed;
+    width: 5%;
+    right: 2%;
+    bottom: 2%;
+    transition: all ease-in-out 150ms;
+}
+
+#angleIcon path{
+    fill: #3366ff;
+}
+
+#angleIcon:hover{
+    width: 5.5%;
+    color: #3366ff;
 }
