@@ -18,59 +18,76 @@
 
         <div id="particles-js">
             <header>
-                <nav>
-                    <a href="#">Home</a>
+                <nav id="headNav">
+                    <a href="index.html">Home</a>
                     <a href="#">About</a>
                     <a href="#">Portfolio</a>
                     <a href="#">Contact</a>
                     <div class="line"></div>
                 </nav>
             </header>
-        </div>
-        <div class="box">
-            <img src="images/profilePhoto.png" class="profilePhoto">
-            <h1>Marcos Motta</h1>
-            <h3>
-                System Analysis and Development student, Angle Software Co-Founder and Hobbyst Designer.
-            </h3>
-            <p>
-                My name is Marcos Paulo da Motta, I'm 21 years old and I'm at 3rd semester of System Analysis and Development. I'm also co-founder
-                at a startup named Angle Software.
-                <br /> Last year I've participated in many events, and win some competitions, like 2nd place at Code Arena and
-                Highlight Prize at Senac Journey of Scientific Initiation.
-                <br /> I'm actually a Designer and Backend developer at Whizr, a Web App that is being developed by Angle.
-            </p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/marcosmtt" id="fb">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/marcosmtt" id="gh">
-                        <i class="fab fa-github-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://marcosmtt.wordpress.com/" id="wp">
-                        <i class="fab fa-wordpress"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://msama123.deviantart.com/" id="da">
-                        <i class="fab fa-deviantart"></i>
-                    </a>
-                </li>
-            </ul>
+            </div>
+
+            <button id="dropButton">
+                <i class="fas fa-bars" id="menuButton"></i>
+            </button>
+
+            <div class="dropMenu">
+                <div class="dropContent">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Contato</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/profilePhoto.png" class="profilePhoto">
+                <h1>Marcos Motta</h1>
+                <h3>
+                    System Analysis and Development student, Angle Software Co-Founder and Hobbyst Designer.
+                </h3>
+                <p>
+                    My name is Marcos Paulo da Motta, I'm 21 years old and I'm at 3rd semester of System Analysis and Development. I'm also co-founder
+                    at a startup named Angle Software.
+                    <br /> Last year I've participated in many events, and win some competitions, like 2nd place at Code Arena
+                    and Highlight Prize at Senac Journey of Scientific Initiation.
+                    <br /> I'm actually a Designer and Backend developer at Whizr, a Web App that is being developed by Angle.
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/marcosmtt" id="fb">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/marcosmtt" id="gh">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://marcosmtt.wordpress.com/" id="wp">
+                            <i class="fab fa-wordpress"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://msama123.deviantart.com/" id="da">
+                            <i class="fab fa-deviantart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://www.facebook.com/aglsoftware/">
+                <img src="images/angleIcon.svg" id="angleIcon">
+            </a>
         </div>
 
-        <a href="https://www.facebook.com/aglsoftware/">
-            <img src="images/angleIcon.svg" id="angleIcon">
-        </a>
-    </div>
-
-    <script src="scripts/particles.js"></script>
-    <script src="scripts/app.js"></script>
+        <script src="scripts/particles.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/functions.js"></script>
 </body>
 
 </html>

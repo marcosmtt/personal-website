@@ -10,7 +10,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed; 
     background-color:#12093e;
 }
@@ -33,24 +33,31 @@ body {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
+}
+
+#dropButton {
+    display: none;
+}
+.dropMenu {
+    display: none;
 }
 
 header {
     background-color: #020610;
-    height: 100%;
-    padding: 2%;
+    height: 4vw;
+    padding: 2vw;
 }
 
-nav {
-    position: absolute;
-    top: 5px;
+#headNav {
+    position: fixed;
+    top: 0.5%;
     left: 50%;
     transform: translate(-50%);
 }
 
-nav > a {
+#headNav > a {
     color: #BBB;
     text-align: center;
     text-decoration: none;
@@ -64,28 +71,28 @@ nav > a {
 
 .line {
     width: 24%;
-    height: 3px;
+    height: 0.2vw;
     background-color: #DDD;
     transition: all .2s ease-in-out;
 }
 
-nav > a:nth-child(2):hover ~ .line{
+#headNav > a:nth-child(2):hover ~ .line{
    transform: translate(105%);
    transition: all .2s ease-in-out;
 
 }
-nav > a:nth-child(3):hover ~ .line{
+#headNav > a:nth-child(3):hover ~ .line{
     transform: translate(210%);
     transition: all .2s ease-in-out;
 }
- nav > a:nth-child(4):hover ~ .line{
+ #headNav > a:nth-child(4):hover ~ .line{
     transform: translate(320%);
     transition: all .2s ease-in-out; 
 }
 
 .box {
     position: relative;
-    width: 25vw;
+    width: 25%;
     height: 40vw;
     background: rgba(0, 0, 0, 0.6);
     padding: 1%;
@@ -174,4 +181,125 @@ color: white;
 #angleIcon:hover{
     width: 5.5%;
     color: #3366ff;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+  
+    header {
+        display: none;
+    }
+    
+    #dropButton {
+        position: fixed;
+        display: inline-block;
+        top: 2%;
+        left: 5%;
+    }
+
+    .dropMenu {
+        position: absolute;
+        display: inline-block;
+        top: 2%;
+        left: 5%; 
+    }
+    .dropContent {
+        display: none;
+        position: absolute;
+        background-color:#112;
+        width: 11em;
+        height: 20em;
+        -moz-box-shadow:0 1px 5px 0 #001; 
+        -webkit-box-shadow:0 1px 5px 0 #001;
+        z-index: 2;
+    }
+    
+    .dropContent a {
+        display: list-item;
+        text-decoration: none;
+        list-style-type: none;
+        text-shadow:0px 0px 5px #555; 
+        color: #ddd;
+        padding-top: 2em;
+        padding-left: 2em;
+        font-size: 5vw; 
+
+    }
+    #menuButton {
+        color: white;
+        font-size: 10vw;
+    }
+
+    .box {
+        display: block;
+        position: relative;
+        width: 75%;
+        height: 65%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20%;
+    }
+    
+    .profilePhoto {
+        display: fixed;
+        position: relative;
+        width: 35%;
+        margin-top: 5%;
+    }
+    
+    .box h1 {
+    font-size: 9vw;
+    font-weight: 50;
+    letter-spacing: 1px;
+    color: white;
+    }
+    
+    .box h3 {
+        width: 90%;
+        margin: auto;
+        color: #ddd;
+        font-size: 5vw; 
+        font-weight: 10;
+        text-align: center;
+    }
+    
+    .box p {
+        display: none;
+        /*
+        width: 81%;
+        margin: auto;
+        margin-top: 6%;
+        font-size: 1vw;
+        color: #aaa;
+        text-align: justify;
+        */
+    }
+    
+    .box ul {
+        margin: 20%;
+        padding: 0;
+    }
+    
+    .box li {
+        display: inline-block;
+        margin: 2%; 
+        list-style: none;
+    }
+    
+    .box li a {
+        color: white;
+        text-decoration: none;;
+        font-size: 10vw;
+        transition: all ease-in-out 150ms;
+    }
+
+    #angleIcon {
+        position: fixed;
+        width: 15%;
+        right: 4%;
+        bottom: 2%;
+        transition: all ease-in-out 100ms;
+    }
 }
