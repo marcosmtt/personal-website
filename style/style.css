@@ -11,10 +11,19 @@
 body {
     width: 100%;
     height: 100vh;
+    position: fixed; 
+    background-color:#12093e;
+}
+
+.bg {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url("../images/bgImg.jpg");
     background-repeat: no-repeat;
-    position: fixed; 
-     /* background-color:rgb(34, 46, 73); */
+    opacity: .6;
 }
 
 #particles-js {
@@ -78,7 +87,7 @@ nav > a:nth-child(3):hover ~ .line{
     position: relative;
     width: 25vw;
     height: 40vw;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     padding: 1%;
     text-align: center;
     margin: auto;
