@@ -68,8 +68,8 @@ nav > a:nth-child(3):hover ~ .line{
 
 .box {
     position: relative;
-    width: 26%;
-    height: 80%;
+    width: 25vw;
+    height: 40vw;
     background: rgba(0, 0, 0, 0.4);
     padding: 1%;
     text-align: center;
@@ -108,9 +108,8 @@ color: white;
 }
 
 .box ul {
-    margin: 0;
+    margin: 8%;
     padding: 0;
-    top: 80%;
 }
 
 .box li {
