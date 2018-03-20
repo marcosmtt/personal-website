@@ -190,6 +190,18 @@ color: white;
     color: #3366ff;
 }
 
+#wip {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+}
+
+#wip h3 {
+    font-size: 1.5vw;
+    color: white;
+    opacity: 0.2;
+}
+
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px) {
   
@@ -311,4 +323,11 @@ color: white;
         bottom: 2%;
         transition: all ease-in-out 100ms;
     }
+
+    #wip h3 {
+        font-size: 5vw;
+        color: white;
+        opacity: 0.2;
+    }
+    
 }
