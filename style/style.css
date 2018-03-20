@@ -23,6 +23,7 @@ body {
     left: 0;
     background-image: url("../images/bgImg.jpg");
     background-repeat: no-repeat;
+    background-size: auto;
     opacity: .6;
 }
 
@@ -192,9 +193,11 @@ color: white;
     
     #dropButton {
         position: fixed;
+        text-decoration: none;
         display: inline-block;
         top: 2%;
-        left: 5%;
+        left: 6%;
+        z-index: 2;
     }
 
     .dropMenu {
@@ -203,7 +206,7 @@ color: white;
         top: 2%;
         left: 5%; 
     }
-    .dropContent {
+    #dropContent {
         display: none;
         position: absolute;
         background-color:#112;
@@ -211,10 +214,10 @@ color: white;
         height: 20em;
         -moz-box-shadow:0 1px 5px 0 #001; 
         -webkit-box-shadow:0 1px 5px 0 #001;
-        z-index: 2;
+        z-index: 1;
     }
     
-    .dropContent a {
+    #dropContent a {
         display: list-item;
         text-decoration: none;
         list-style-type: none;
@@ -228,6 +231,7 @@ color: white;
     #menuButton {
         color: white;
         font-size: 10vw;
+        transition: all ease-in-out 150ms;
     }
 
     .box {
