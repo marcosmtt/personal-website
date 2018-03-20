@@ -9,3 +9,6 @@ function dropMenu() {
     }
 
 };
+
+const dropBtn = document.getElementById("dropButton");
+dropBtn.addEventListener("click", dropMenu);
