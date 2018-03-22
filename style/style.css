@@ -158,19 +158,19 @@ color: white;
 }
 
 #fb:hover{
-    color: #4267b2;
+    color: #aaa;
 }
 
 #gh:hover {
-    color: #8533ff;
+    color: #aaa;
 }
 
 #wp:hover {
-    color: #3366ff;
+    color: #aaa;
 }
 
 #da:hover {
-    color: #00ff80;
+    color: #aaa;
 }
 
 #angleIcon {
@@ -328,6 +328,5 @@ color: white;
         font-size: 5vw;
         color: white;
         opacity: 0.2;
-    }
-    
+    }   
 }

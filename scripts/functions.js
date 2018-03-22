@@ -1,5 +1,4 @@
 function dropMenu() {
-
     if (document.getElementById("dropContent").style.display == 'inline') {
         document.getElementById("dropContent").style.display = 'none';
         document.getElementById("menuButton").style.color = 'white';
@@ -7,7 +6,6 @@ function dropMenu() {
         document.getElementById("dropContent").style.display = 'inline';
         document.getElementById("menuButton").style.color = '#0a0a11';
     }
-
 };
 
 const dropBtn = document.getElementById("dropButton");
