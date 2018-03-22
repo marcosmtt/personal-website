@@ -156,22 +156,7 @@ color: white;
     font-size: 3vw;
 }
 
-#fb:hover{
-    color: #ccc;
-    font-size: 2.9vw;
-}
-
-#gh:hover {
-    color: #ccc;
-    font-size: 2.9vw;
-}
-
-#wp:hover {
-    color: #ccc;
-    font-size: 2.9vw;
-}
-
-#da:hover {
+.box li a:hover{
     color: #ccc;
     font-size: 2.9vw;
 }
@@ -314,11 +299,15 @@ color: white;
     
     .box li a {
         color: white;
-        text-decoration: none;;
-        font-size: 10vw;
-        transition: all ease-in-out 150ms;
+        text-decoration: none;
+        font-size: 8.3vw;
     }
 
+    .box li a:hover{
+        color: #ccc;
+        font-size: 7.9vw;
+    }
+    
     #angleIcon {
         position: fixed;
         width: 15%;
