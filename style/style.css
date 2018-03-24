@@ -22,10 +22,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../images/bgImg.jpg");
+    background-image: url("../images/bgImage.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
-    opacity: .6;
+    background-size: cover;
+    opacity: .4;
 }
 
 #particles-js {
@@ -53,6 +53,7 @@ body {
 
 header {
     background-color: #020610;
+    position: relative;
     height: 4vw;
     padding: 2vw;
 }
@@ -135,12 +136,14 @@ color: white;
     margin-top: 6%;
     font-size: 1vw;
     color: #aaa;
-    text-align: justify;
+    text-align: left;
+    hyphens: auto;
 }
 
 .box ul {
     margin: 5%;
     padding: 0;
+    font-size: 0;
 }
 
 .box li {
@@ -154,11 +157,12 @@ color: white;
     color: white;
     text-decoration: none;;
     font-size: 3vw;
+    transition: transform 1s ease-in;
 }
 
-.box li a:hover{
+.box li a:hover svg{
     color: #ccc;
-    font-size: 2.9vw;
+    transform: scale(.98);
 }
 
 #angleIcon {
@@ -193,6 +197,12 @@ color: white;
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px) {
   
+    .bg {
+        background-image: url("../images/bgImageMobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     header {
         display: none;
     }
